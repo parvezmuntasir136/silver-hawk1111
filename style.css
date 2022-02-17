@@ -1,0 +1,405 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container {
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    overflow-x: hidden;
+}
+/*==================================== global-style====================*/
+ul li {
+    list-style: none;
+}
+/*==================================== end global=======================*/
+.topbar-section {
+    background: #173a69;
+    padding: 10px 0;
+}
+.topbar-section .top-parrent {
+    display: flex;
+    justify-content: space-between;
+}
+.topbar-section .mobile-email ul{
+    display: flex;
+}
+.topbar-section .social-icon ul {
+    display: flex;
+}
+.topbar-section .mobile-email li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+.topbar-section .mobile-email li a:hover{
+    color: aqua;
+
+}
+.topbar-section .mobile-email li span{
+    margin-left: 10px;
+}
+.topbar-section .mobile-email ul .mr-li {
+    margin-right: 30px;
+}
+.topbar-section .social-icon li a{
+    margin-right:10px;
+    color:#fff;
+    padding: 10px;    
+}
+.topbar-section .social-icon li a:hover{
+    color:aqua;
+}
+
+/*============================header-section ===============*/
+.header-section {
+    padding: 10px 0;
+}
+.header-section .header-parrent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo img{
+    width:250px;  
+}
+.header-section .header-parrent ul {
+    display: flex;
+}
+.header-section .header-parrent ul li a {
+    text-decoration: none;
+    margin: 0 35px;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 600;
+    color: #000;
+    position: relative;
+}
+.header-section .header-parrent ul li a::after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 0;
+    background: #000;
+    bottom: -64px;
+    left: 50%;
+    transition: 1s;
+    transform: translate(-50%);
+}
+.header-section .header-parrent ul li a:hover::after{
+    font-weight: 700;
+    width: 100%;
+}
+
+
+/*======================== banner-section =================*/
+.banner-section {
+    padding: 180px 0;
+    background: url("../img/bannaer-img.jpg");
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    top: 0;
+}
+.banner-section::after {
+    position: absolute;
+    content: "";
+    background: url("../img/ovarlay-4.jpg");
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: .2;
+    top: 0;
+}
+
+.banner-section .banner-parrent {
+    display: flex;
+    justify-content: end;
+}
+.banner-section h5 {
+    font-size: 17px;
+    font-weight: 800;
+    color: #000;
+    text-transform: uppercase;
+}
+.banner-section h1 {
+    font-size: 60px;
+    font-weight: 800;
+    color: #000;
+    text-transform: uppercase;
+}
+.banner-section p {
+    max-width: 412px;
+    font-size: 14px;
+    font-weight: 400;
+}
+.banner-section .content-banner {
+    width: 42%;
+    z-index: 9999999999999999;
+}
+.banner-section .banner-btn a {
+    padding: 13px 26px;
+    text-decoration: none;
+    margin-top: 30px;
+    font-weight: 700;
+    display: inline-block;
+    border: 1px solid #173a69;
+    color: #173a69;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.banner-section .banner-btn .contuct {
+    background:#173a69;
+    color: #fff;
+    margin-right: 15px;
+}
+.banner-section .banner-btn .contuct:hover{
+    color: #173a69;
+    background-color: #fff;
+    transition: 1s;
+}
+.banner-section .banner-btn .Get-start:hover{
+    background: #173a69;
+    color: #fff;
+    transition: 2s;
+}
+/*=======================================what-section====================*/
+.service-parent{
+    text-align: center;
+}
+.what-service{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    padding: 80px;
+}
+.end-line{
+    position: relative;
+    top:40px;
+}
+/*---------------------------------icon------------------------------*/
+.icon-section{
+    position: relative;
+    top: 10px;
+    padding: 20px;
+}
+.icon-parrant{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+.icon-1 img{
+    width: 100%;
+}
+.icon-parrant p{
+    padding: 30px 0;
+}
+
+
+/*======================================== about-section=================*/
+.about-section {
+    margin: 0px 0;
+    background: url("../img/about-backgroubnd-img.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 70px 0;
+    margin-top: 30px;
+    width: 100%;
+}
+.about-section .about-parrent {
+    display: flex;
+}
+.about-section .about-parrent .about-img{
+    width:100%;
+}
+.about-img img{
+    width: 100%;
+}
+.about-section .about-parrent h2 {
+    font-size: 28px;
+    font-weight: 700;
+    position: relative;
+}
+.about-parrent .about-content {
+    margin-top: 35px;
+    margin-left: 24px;   
+}
+.about-section .about-parrent p{
+    margin-top: 20px;
+    font-size: 15px;
+}
+.about-section .about-parrent .about-content .after{
+    margin-top: 30px;
+}
+
+/*=============================gallary-section==================*/
+.gallary-section{
+    margin-top:60px;
+}
+.gallary-section .gallary-parrents {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 30px;
+    row-gap: 25px;
+    margin-top: 20px;
+}
+.line{
+    text-align: center;
+}
+.line img{
+    padding: 30px;
+}
+.gallary-section .gallary-parrents img {
+    width: 100%;
+}
+.gallary-section .gallary-item {
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+.gallary-section .gallary-item::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    transition: 1s;
+    background: #000;
+    opacity: 0;
+}
+.gallary-section .gallary-item:hover::after{
+    opacity: 0.6;
+}
+.gallary-hover-content{
+    color:#fff;
+}
+.gallary-section .gallary-item h5 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+}
+.gallary-section .gallary-hover-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: 1s;
+    z-index: 1;
+}
+.gallary-item .gallary-hover-content a{
+    color: #fff;
+}
+.gallary-section .gallary-item:hover .gallary-hover-content {
+    opacity: 1;  
+}
+.start-btn{
+    text-align: center;
+}
+.start-btn a{
+    background-color: #173a69;
+    border: 1px solid #000;
+    color: white;
+    padding: 20px 32px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 700;
+}
+.start-btn{
+    padding: 50px;
+}
+.start-btn a:hover{
+    background: #fff;
+    color: #173a69;
+    transition: 1s;
+}
+/*===============================footer=============================*/
+.footer-section {
+    background: #173a69;
+    padding: 60px 0;
+    margin-top: 70px;
+}
+.footer-section .footer-parrent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+.footer-section .footer-parrent h5{
+    font-size: 24px;
+    font-weight: 400;
+}
+.footer-section .footer-parrent a{
+    font-size: 30px;
+    font-weight: 800;
+    text-decoration: none;
+    color: #fff;
+}
+.footer-section .footer-parrent a:hover{
+    color: aqua;
+}
+.logo-parrent{
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+.Logo{
+    margin-top: 40px;
+    text-align: center;
+}
+.Logo img {
+    width: 300px;
+}
+
+.social-icon1{
+    position: relative;
+    text-align: center;
+    margin-top: 10px;
+}
+.social-icon1 ul  {
+    display: flex;
+    justify-content: center;
+}
+.social-icon1 li {
+    margin: 10px;
+    text-align: center; 
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+    border: 1px solid;
+    display: flex;
+    align-items: center;
+}
+.social-icon1 li a{
+    text-align: center;
+    color: gray;
+    width: 100%;
+}
+.social-icon1 li:hover{
+    background: blue;
+}
+.footer {
+    background: black;
+    padding: 20px 0;
+    margin-top: 60px;
+}
+.footer p{
+    color: #fff;
+    text-align: center;
+}
